@@ -1,3 +1,5 @@
+use std::num::Wrapping;
+
 fn mutability() {
     println!("======= MUTABILITY =========");
     // let x = 5;
@@ -52,10 +54,27 @@ fn shadowing() {
     //     `free`-ing the reference first. (`mut` reference)
 }
 
+fn types() {
+    println!("=========== TYPES ============");
+    // 1. `parse` requires type annotations
+    // let _guess = "42".parse().expect("Not a number");
+    let _guess: i32 = "42".parse().expect("Not a number");
+
+    // 2. Wrapping arithmetic to prevent overflow errors
+    // let _unwrapped = 0u32 - 1u32; // Overflows due to unsigned
+    let num = Wrapping(0u32) - Wrapping(1u32);
+    println!(
+        "Wrapping - Unsigned (0 - 1) op gives max u32: {}",
+        num.eq(&Wrapping(u32::MAX))
+    );
+}
+
 fn main() {
+    // 3.1
     mutability();
-
     variables();
-
     shadowing();
+
+    // 3.2
+    types();
 }
