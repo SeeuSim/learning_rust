@@ -4,5 +4,5 @@ Nothing much here, just following the tutorials at the [Rust Website](https://do
 
 | Chapter | Project       |
 |---------|---------------|
-|       2 | guessing_game |
+|       2 | [guessing_game](https://github.com/SeeuSim/learning_rust/tree/master/guessing_game) |
 
