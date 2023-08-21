@@ -5,5 +5,5 @@ Nothing much here, just following the tutorials at the [Rust Website](https://do
 | Chapter | Project                                                                             |
 |---------|-------------------------------------------------------------------------------------|
 |       2 | [guessing_game](https://github.com/SeeuSim/learning_rust/tree/master/guessing_game) |
-|       3 | [variables](https://github.com/SeeuSim/learning_rust/tree/master/variables)         |
+|       3 | [prog_concepts](https://github.com/SeeuSim/learning_rust/tree/master/prog_concepts) |
 
